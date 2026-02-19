@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaharyar-Portfolio</title>
+    <!------css links-------->
+    <link rel="stylesheet" href="style.css">
+    <!-----------favicon------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io (2)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io (2)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io (2)/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Font Awesome deferred loading -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+
+<body>
+
+    <!-- 3D Animated Background -->
+
+    <div class="background-3d">
+        <div class="grid-bg"></div>
+        <div class="floating-shapes"></div>
+        <div class="particles"></div>
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+
+    <!----------hero section--------------->
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Shaharyar</h1>
+            <h2><span class="animated-text">I build cool web apps 💻</span></h2>
+            <p class="hero-description">Front-end developer passionate about creating beautiful, functional web
+                experiences that make a difference. Transforming ideas into reality with cutting-edge technology.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </section>
+    <!------------about section------------------->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="profile-img">
+                <img src="images/IMG_1858.JPG" alt="Sheri Profile">
+            </div>
+
+            <div class="about-text">
+                <h3>Software Developer & Tech Enthusiast</h3>
+                <p>I'm a passionate software developer with expertise in building modern web applications. With a strong
+                    foundation in both front-end and back-end technologies, I create seamless digital experiences that
+                    solve real-world problems.</p>
+                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
+                    or sharing knowledge with the developer community.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">PHP/Java</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+
+                </div>
+
+                <div class="cv-download">
+                    <button onclick="downloadCV()" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!------------project section-------------------------->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3>E-Commerce Platform</h3>
+                <p>A full-featured online shopping platform built with React and Node.js, featuring real-time inventory
+                    management and secure payment integration.</p>
+                <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View Project
+                    <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Social Media Dashboard</h3>
+                <p>Analytics dashboard for social media management with interactive charts, real-time updates, and
+                    multi-platform integration.</p>
+                <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View Project
+                    <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Interactive Game Portal</h3>
+                <p>Browser-based gaming platform featuring multiplayer capabilities, leaderboards, and immersive user
+                    experiences built with vanilla JavaScript.</p>
+                <a href="https://github.com/yourusername/project3" class="btn btn-primary" target="_blank">View Project
+                    <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Visualization Tool</h3>
+                <p>Interactive data visualization application that transforms complex datasets into beautiful,
+                    insightful charts and graphs using D3.js.</p>
+                <a href="https://github.com/yourusername/project4" class="btn btn-primary" target="_blank">View Project
+                    <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Chatbot Assistant</h3>
+                <p>Intelligent chatbot powered by natural language processing, providing automated customer support and
+                    personalized recommendations.</p>
+                <a href="https://github.com/yourusername/project5" class="btn btn-primary" target="_blank">View Project
+                    <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>EduNest School Management Website</h3>
+                <p>
+                    A clean, responsive school website with essential academic and admission details.
+                </p>
+                <a href="https://edunestschool-mu.vercel.app/" class="btn btn-primary"
+                    target="_blank">
+                    View Project <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-------------------contact section--------------------------------->
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-grid">
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-main">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Location</h4>
+                                <p>
+                                    <a href="https://www.google.com/maps/place/Lahore,+Pakistan" target="_blank"
+                                        style="text-decoration: none; color: inherit;">
+                                        Lahore, Pakistan
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Phone</h4>
+                                <p>
+                                    <a href="https://wa.me/923062742990" target="_blank"
+                                        style="text-decoration: none; color: inherit;">
+                                        +92 306 2742990
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:babasheri322@gmail.com"
+                                        style="text-decoration: none; color: inherit;">
+                                        babasheri322@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/mynetwork?skipRedirect=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B9mdP%2FpTMRailCKuM5wsqWQ%3D%3D"
+                                target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Shaharyaro1" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sheri_236?igsh=NW9vamR3eHlveHd2&utm_source=qr"
+                                target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/923062742990?text=Hi%20Sheri%2C%20I%20just%20visited%20your%20portfolio!"
+                                target="_blank" class="social-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactfrom">
+                    <form class="contact-form" id="contact-form">
+                        <input type="hidden" name="access_key" value="71ac1a84-f678-4cf4-b787-6881ae1910d3">
+                        <input type="hidden" name="subject" value="New Contact from Portfolio Website">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="firstName" name="firstName" required
+                                        placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------footer section------------------>
+    <footer>
+        <p>&copy; 2025 Shaharyar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script>
+        // Create Floating Shapes - REDUCED for performance
+        const shapesContainer = document.querySelector('.floating-shapes');
+        const shapes = ['circle', 'square', 'triangle'];
+
+        for (let i = 0; i < 6; i++) {
+            const shape = document.createElement('div');
+            shape.className = `shape ${shapes[i % 3]}`;
+            shape.style.left = Math.random() * 100 + '%';
+            shape.style.top = Math.random() * 100 + '%';
+            shape.style.animationDelay = Math.random() * 10 + 's';
+            shape.style.animationDuration = (15 + Math.random() * 10) + 's';
+            shapesContainer.appendChild(shape);
+        }
+
+        // Create Particles - REDUCED for performance
+        const particlesContainer = document.querySelector('.particles');
+
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.bottom = '-10px';
+            particle.style.animationDelay = (i * 1) + 's';
+            particle.style.animationDuration = (12 + Math.random() * 8) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Mouse Move Parallax - THROTTLED for performance
+        let ticking = false;
+        document.addEventListener('mousemove', (e) => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+                    const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+                    document.querySelectorAll('.orb').forEach((orb, index) => {
+                        const speed = (index + 1) * 0.5;
+                        orb.style.transform = `translate(${moveX * speed}px, ${moveY * speed}px)`;
+                    });
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    </script>
+</body>
+
+</html>
